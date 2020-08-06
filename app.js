@@ -14,7 +14,7 @@ app.use("/notes", noteRoutes);
 app.use("/notebooks", notebookRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).json("path note found!");
+  res.status(404).json("path not found!");
 });
 
 app.use((err, req, res, next) => {
